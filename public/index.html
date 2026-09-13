@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">MONITORING SYSTEM</p>
+        <h1>Website Monitor</h1>
+        <p class="subtitle">Check the current availability of your websites.</p>
+      </div>
+      <div class="badge">Every 5 minutes</div>
+    </header>
+
+    <section class="summary">
+      <div>
+        <span class="label">Overall Status</span>
+        <strong id="overall">Checking...</strong>
+      </div>
+      <div>
+        <span class="label">Last Check</span>
+        <strong id="checkedAt">—</strong>
+      </div>
+    </section>
+
+    <section id="cards" class="cards"></section>
+
+    <p class="note">
+      Demo version: the dashboard and API are working, but the current checker uses demo status values.
+      The next step is to connect the backend to real HTTP/HTTPS checks.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
